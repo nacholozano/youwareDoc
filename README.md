@@ -1,2 +1,7 @@
-# youwareDoc
-This is a Meteor JS app with learning purpose
+## youwareDoc
+
+Youware`s docs.
+
+# Features: 
+
+- [x] This is a complete item
