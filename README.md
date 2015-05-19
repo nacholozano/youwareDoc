@@ -30,7 +30,10 @@ Youware`s docs.
   - [x] Listar historial de compra.
   - [x] Mostrar compras realizadas antes de una fecha.
   - [ ] Mostrar compras realizadas después de una fecha.
- 
+- [ ] **Ajustes de cuenta** 
+  - [ ] Modificar datos.
+  - [ ] Pedir contraseña ante de modificar datos.
+
 - [x] **No puedes acceder a ciertas páginas si no estas loegueado** (carrito, ajustes e historial de compra)
 - [x] **Pantalla de carga**
 - [x] **Control de dirección no encontrada**
