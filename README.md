@@ -4,7 +4,10 @@ Youware`s docs.
 
 # Features
 
-- [x] **Login**
-      [x] Two users cant have the same username either the same email. (Meteor`s config)
-      [x]
+- [x] **Iniciar sesión y registro**
+- [x] **Carrito de la compra**
+- [x] **Filtrado de productos**     
+-                 [x]dsdsds 
+ 
+ 
       
