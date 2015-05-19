@@ -31,6 +31,6 @@ Youware`s docs.
   - [x] Mostrar compras realizadas antes de una fecha.
   - [ ] Mostrar compras realizadas después de una fecha.
  
-- [x] **No puedes acceder a ciertas páginas si no estas loegueado** (carrito, ajustes de cuenta e historial de compra)
+- [x] **No puedes acceder a ciertas páginas si no estas loegueado** (carrito, ajustes e historial de compra)
 - [x] **Pantalla de carga**
 - [x] **Control de dirección no encontrada**
