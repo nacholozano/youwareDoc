@@ -39,6 +39,10 @@ Youware`s docs.
   - [ ] Modificar datos.
   - [ ] Pedir contraseña ante de modificar datos.
 
-- [x] **No puedes acceder a ciertas páginas si no estas loegueado** (carrito, ajustes e historial de compra)
+- [ ] **Configurador de PC**
+  - [ ] Construir ordenador con componentes compatibles.
+  - [ ] Boceto del PC en construcción.
+
+- [x] **No puedes acceder a ciertas páginas si no estas logueado** (carrito, ajustes e historial de compra)
 - [x] **Pantalla de carga**
 - [x] **Control de dirección no encontrada**
