@@ -20,9 +20,10 @@ Youware`s docs.
   - [x] Listado de productos.
   - [x] Filtrados básicos.
   - [ ] Filtrado específicos.
+  - [x] Test de filtrados específicos ( Sección 'RAM' ). 
   - [x] Posibilidad de añadir productos al carrito.
   
-- [x] **Página del producto** 
+- [ ] **Página del producto** 
   - [x] Información del producto.
   - [x] Añadir al carrito.
   - [x] Comentar producto.
@@ -42,6 +43,10 @@ Youware`s docs.
 - [ ] **Configurador de PC**
   - [ ] Construir ordenador con componentes compatibles.
   - [ ] Boceto del PC en construcción.
+
+- [ ] **Idiomas**
+  - [x] Test de  internacionalización ( Template 'settings' ).
+  - [ ] Internacionalización completa.
 
 - [x] **No puedes acceder a ciertas páginas si no estas logueado** (carrito, ajustes e historial de compra)
 - [x] **Pantalla de carga**
