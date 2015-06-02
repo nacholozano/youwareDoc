@@ -14,7 +14,8 @@ Youware`s docs.
   - [x] Borrar productos del carrito.
   - [x] Realizar la compra.
   - [x] Si añades un producto que ya está , se actualizan las unidades y el precio a pagar.
-  
+  - [ ] Guardar los productos en el carrito durante 30 minutos.  
+
 - [ ] **Página principal**
   - [ ] Paginación de productos. 
   - [x] Listado de productos.
