@@ -44,6 +44,7 @@ Youware`s docs.
 - [ ] **Configurador de PC**
   - [ ] Construir ordenador con componentes compatibles.
   - [ ] Boceto del PC en construcción.
+  - [x] TEST
 
 - [ ] **Idiomas**
   - [x] Test de  internacionalización ( Template 'settings' ).
