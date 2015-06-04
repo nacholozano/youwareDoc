@@ -21,7 +21,7 @@ Youware`s docs.
   - [x] Listado de productos.
   - [x] Filtrados básicos.
   - [ ] Filtrado específicos.
-  - [x] Test de filtrados específicos ( Sección 'RAM' ). 
+  - [x] TEST de filtrados específicos ( Sección 'RAM' ). 
   - [x] Posibilidad de añadir productos al carrito.
   
 - [ ] **Página del producto** 
@@ -50,6 +50,11 @@ Youware`s docs.
   - [x] Test de  internacionalización ( Template 'settings' ).
   - [ ] Internacionalización completa.
 
+- [ ] **Guardar en estado de las páginas al cambiar de página**
+  - [x] TEST ( Template 'configurator' ).
+  - [ ] Guardar estado en toda la aplicación.
+
 - [x] **No puedes acceder a ciertas páginas si no estas logueado** (carrito, ajustes e historial de compra)
 - [x] **Pantalla de carga**
 - [x] **Control de dirección no encontrada**
+
