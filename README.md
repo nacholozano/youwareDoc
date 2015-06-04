@@ -50,7 +50,7 @@ Youware`s docs.
   - [x] Test de  internacionalización ( Template 'settings' ).
   - [ ] Internacionalización completa.
 
-- [ ] **Guardar en estado de las páginas al cambiar de página**
+- [ ] **Guardar el estado de las páginas al cambiar de página**
   - [x] TEST ( Template 'configurator' ).
   - [ ] Guardar estado en toda la aplicación.
 
