@@ -60,7 +60,7 @@ Youware`s docs.
   - [ ] Ver productos
   - [ ] Añadir productos
 
-- [x] **No puedes acceder a ciertas páginas si no estas logueado** (carrito, ajustes e historial de compra)
+- [x] **No puedes acceder a ciertas páginas si no estas logueado** (carrito, ajustes, historial de compra y configurador)
 - [x] **Pantalla de carga**
 - [x] **Control de dirección no encontrada**
 
