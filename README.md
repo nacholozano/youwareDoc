@@ -54,6 +54,11 @@ Youware`s docs.
   - [x] TEST ( Template 'configurator' ).
   - [ ] Guardar estado en toda la aplicación.
 
+- [ ] **Pantalla de administración**
+  - [x] TEST ( Template 'configurator' ).
+  - [ ] Guardar estado en toda la aplicación.
+  
+
 - [x] **No puedes acceder a ciertas páginas si no estas logueado** (carrito, ajustes e historial de compra)
 - [x] **Pantalla de carga**
 - [x] **Control de dirección no encontrada**
