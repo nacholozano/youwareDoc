@@ -55,9 +55,10 @@ Youware`s docs.
   - [ ] Guardar estado en toda la aplicación.
 
 - [ ] **Pantalla de administración**
-  - [x] TEST ( Template 'configurator' ).
-  - [ ] Guardar estado en toda la aplicación.
-  
+  - [ ] Ver pedidos
+  - [ ] Modificar pedidos
+  - [ ] Ver productos
+  - [ ] Añadir productos
 
 - [x] **No puedes acceder a ciertas páginas si no estas logueado** (carrito, ajustes e historial de compra)
 - [x] **Pantalla de carga**
