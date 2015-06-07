@@ -20,9 +20,10 @@ Youware`s docs.
   - [ ] Paginación de productos. 
   - [x] Listado de productos.
   - [x] Filtrados básicos.
-  - [ ] Filtrado específicos.
+  - [x] Filtrado específicos.
   - [x] TEST de filtrados específicos ( Sección 'RAM' ). 
   - [x] Posibilidad de añadir productos al carrito.
+  - [x] Borrar filtros.
   
 - [ ] **Página del producto** 
   - [x] Información del producto.
