@@ -52,7 +52,7 @@ Youware`s docs.
   - [ ] Internacionalización completa.
 
 - [ ] **Guardar el estado de las páginas al cambiar de página**
-  - [x] TEST ( Template 'configurator' ).
+  - [ ] TEST ( Template 'configurator' ).
   - [ ] Guardar estado en toda la aplicación.
 
 - [ ] **Pantalla de administración**
