@@ -2,9 +2,9 @@
 
 <b>Final school year project</b>
 
-Youware is a online shop I made as my Final school year project.
-I used Meteor JS (nodeJS framework).
-This framework allow making a real time app. 
+Youware is a online shop I made as my final school year project.
+I used Meteor JS (nodeJS framework).<br>
+This framework allows making a real time app. 
 
 # Features
 
