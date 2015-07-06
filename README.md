@@ -6,8 +6,8 @@ Youware is a online shop I made as my final school year project.
 I used Meteor JS (nodeJS framework).<br>
 This framework allows making a real time app. 
 
-You can try it here: 
-[youware v1](http://youware2.meteor.com/)
+You can try it here: <br>
+[youware v1](http://youware2.meteor.com/) <br>
 [youware v2](http://youware.meteor.com/)
 
 
