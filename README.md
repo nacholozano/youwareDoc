@@ -18,33 +18,33 @@ Password: nacho
 
 # Features
 
-- [x] **Iniciar sesión y registro**
-  - [x] Dos usuarios no puede tener el mismo nombre. Tampoco el mismo email. 
+- [x] **Sign in and sign up**
+  - [x] Two users can't use the same name. Neither the same email. 
   - [x] Verificación de cuenta por medio del correo asociado a la cuenta.
   
-- [x] **Carrito de la compra**
-  - [x] Solo puedes comprar si has verificado tu cuenta.
-  - [x] Editar unidades en le carrito.  
-  - [x] Borrar productos del carrito.
-  - [x] Realizar la compra.
+- [x] **Shopping cart**
+  - [x] You can't buy any product if you don't verify your account.
+  - [x] Edit products's quantity.  
+  - [x] Remove products.
+  - [x] Buy products.
   - [x] Si añades un producto que ya está , se actualizan las unidades y el precio a pagar.
   - [ ] Guardar los productos en el carrito durante 30 minutos.  
 
-- [ ] **Página principal**
+- [ ] **Home page**
   - [ ] Paginación de productos. 
   - [x] Listado de productos.
-  - [x] Filtrados básicos.
-  - [x] Filtrado específicos.
+  - [x] Basic filters.
+  - [x] Specific filters.
   - [x] TEST de filtrados específicos ( Sección 'RAM' ). 
   - [x] Posibilidad de añadir productos al carrito.
-  - [x] Borrar filtros.
+  - [x] Remove filters.
   
-- [ ] **Página del producto** 
-  - [x] Información del producto.
-  - [x] Añadir al carrito.
-  - [x] Comentar producto.
-  - [ ] Votar comentario.
-  - [x] Votar producto.
+- [ ] **Product's page** 
+  - [x] Product's info.
+  - [x] Add to shopping cart.
+  - [x] Comment product.
+  - [ ] Vote coments.
+  - [x] Vote product.
   - [x] Solo prodrás comentar o votar el producto si lo has comprado.
   
 - [ ] **Historial de compra** 
@@ -53,7 +53,7 @@ Password: nacho
   - [ ] Mostrar compras realizadas después de una fecha.
   
 - [ ] **Ajustes de cuenta**
-  - [ ] Modificar datos.
+  - [ ] Modify your info.
   - [ ] Pedir contraseña ante de modificar datos.
 
 - [ ] **Configurador de PC**
