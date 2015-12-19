@@ -1,0 +1,49 @@
+<template name="procesorFilterConfigurator">
+
+    <div class="row">
+        <div class="col s12 m2 l2">
+           {{#with getImageAndPage}}
+            <a href="{{link}}">
+                <img src="{{image}}" title="{{name}}" id='imgConf' alt="" class="responsive-img">
+            </a>
+            {{/with}}
+        </div>
+
+        <div class="col s12 m10 l6">
+
+            <select name="seccion" class="procesorFilter">
+                <option value="">Elegir procesador</option>
+
+                {{#each getProcesor}}
+                <option value='{{_id}}' {{getSelectedValue _id 'procesor'}}> {{name}}  </option>
+                {{/each}}
+
+            </select>
+
+            <div class="configComponentInfo">
+               {{#with getDataProduct}}
+                <div class="col l4 m4 s12">Precio: {{price}}</div>
+                <div class="col l4 m4 s12">Votos: {{votes}}</div>
+                <div class="col l4 m4 s12">Socket: {{details.socket}}</div>
+                {{/with}}
+            </div>
+
+       <div class="section"></div>
+
+        </div>
+
+        {{iniSelect }}
+
+        <div class="col s12 m6 l3 offset-m1 offset-l1">
+
+            <select name="seccion" class="procesorPower">
+                <option value=''>Rendimiento del procesador</option>
+                <option value="bajo" {{getSelectedValue "bajo" 'procesorPower'}}>Bajo</option>
+                <option value="medio" {{getSelectedValue  "medio" 'procesorPower'}}>Medio</option>
+                <option value="alto" {{getSelectedValue "alto" 'procesorPower'}}>Alto</option>
+            </select>
+
+        </div>
+    </div>
+
+</template>

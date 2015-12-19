@@ -1,0 +1,17 @@
+/* -------loading spinner------- */
+@media screen and (max-width: 600px) {
+    .preload-wrapper{
+        margin-left: 40% !important;
+    }
+}
+
+.preload-wrapper{
+    margin-left: 48%;
+    margin-top: 20vh;
+    margin-bottom: 50%;
+}
+
+.fa-circle-o-notch{
+    color: #85d65f;
+    font-weight: 200;
+}

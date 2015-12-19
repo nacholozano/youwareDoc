@@ -1,0 +1,73 @@
+/* -------------------- Adaptabilidad -------------------- */
+
+@media screen and (max-width: 600px) {
+    .menu-movil {
+        background-color: white !important;
+        padding-left: 0 !important;
+    }
+    .bloque-productos {
+        padding-left: 2.2rem !important;
+    }
+    .card {
+        width: 95% !important;
+    }
+    .precio-producto {
+        height: 80px !important;
+        margin-top: 20px;
+    }
+    .nombre-producto {
+        margin-top: 20px;
+    }
+    .main-ini {
+        padding-top: 10px !important;
+    }
+    .row.info-basic-pro {
+        margin-bottom: 0s;
+    }
+    .popout {
+        width: 86vw !important;
+    }
+    .purchase-table {
+        margin-left: -5%;
+        width: 99vw;
+    }
+    .modal {
+        top: 0 !important;
+        margin: 0;
+        width: 100vw;
+    }
+    .configComponentInfo>div{
+        margin-bottom: 10px;
+    }
+    .configComponentInfo>div:last-child {
+        margin-bottom: 20px;
+    }
+    .componentes img {
+        margin-left: 24% !important;
+    }
+    .ayuda-link{
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .borrar,
+    .edit {
+        font-size: 2.5em !important;
+        padding-right: 27%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .titulo-seccion {
+        margin-top: 17px;
+    }
+    .productos>.titulo-seccion {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+    }
+    .basic-filters {
+        margin-bottom: 30px;
+    }
+}

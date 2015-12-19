@@ -1,0 +1,50 @@
+<template name="ramFilterConfigurator">
+
+    <div class="row">
+        <div class="col s12 m2 l2">
+            {{#with getImageAndPage}}
+            <a href="{{link}}">
+                <img src="{{image}}" title="{{name}}" id='imgConf' alt="" class="responsive-img">
+            </a>
+            {{/with}}
+        </div>
+
+        <div class="col s12 m10 l6">
+
+            <select name="seccion" class="ramFilter">
+                <option value="">Elegir RAM</option>
+
+                {{#each getRam}}
+                <option value='{{_id}}' {{getSelectedValue _id 'ram'}}> {{name}} </option>
+                {{/each}}
+
+            </select>
+
+            <div class="configComponentInfo">
+                {{#with getDataProduct}}
+                <div class="col l4 m4 s12">Precio: {{price}}</div>
+                <div class="col l4 m4 s12">Votos: {{votes}}</div>
+                <div class="col l4 m4 s12">Tipo RAM: {{details.typeRAM}}</div>
+                {{/with}}
+            </div>
+
+           <div class="section"></div>
+
+        </div>
+
+        <div class="col s12 m6 l3 offset-m1 offset-l1 ramQuantity">
+
+            <div class="input-field col s12 l12 m12">
+                <input id="ramQuantity" type="text" min=0 max={{getRamQuantity}}>
+                <label for="ramQuantity">Cantidad de RAM</label>
+            </div>
+
+           <p id="mensajeRam"></p>
+
+        </div>
+
+        {{iniSelect }}
+
+    </div>
+
+</template>

@@ -1,0 +1,46 @@
+<template name="header">
+<div class="row header z-depth-2">
+    <!--
+    seria mejor poner aqui el sidenav, pero funciona a medias
+-->
+
+    <div class="col m9 l10 s10 offset-s2 menu-movil">
+        <a href="/">
+            <img class="logo" title="Página principal" src="/logo.PNG" alt="Logo de youware">
+        </a>
+    </div>
+
+    <div class="col m3 l2 valign-wrapper hide-on-small-only">
+
+        {{#if currentUser}}
+        <a title="Carrito" href="basket" class="right accion-hover icon waves-effect waves-light"><i class="mdi-action-shopping-cart"></i></a>
+
+    <a title='Configurador de PC' href="configurator" class="right accion-hover collection-item waves-effect waves-light icon"><i class="white-text fa fa-wrench fa-wrench-header"></i></a>
+
+        {{/if}}
+
+        <a href="#!" data-activates='dropUser' class="right accion-hover dropdown-button icon waves-effect waves-light"><i class="mdi-action-account-circle"></i></a>
+
+        <ul id='dropUser' class='dropdown-content z-depth-2'>
+            {{#if currentUser}}
+                <li><a href="settings">Ajustes</a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="purchase">Compras</a>
+                </li>
+                <li class="divider"></li>
+                <li><a class="a-logout" href="#!">Logout</a>
+                </li>
+            {{else}}
+                <li><a href="login">Iniciar sesión</a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="signUp">Registrarse</a>
+                </li>
+            {{/if}}
+        </ul>
+
+    </div>
+
+</div>
+</template>

@@ -1,0 +1,642 @@
+body>div:last-child {
+    height: inherit !important;
+}
+/* Botones de inicio0, registro y carrito */
+
+button {
+    margin-top: 25px;
+}
+/* ---------------------- Header----------------------- */
+
+.header {
+    width: 100%;
+    /* El header se desplaza con el scroll,la anchura del header se reduce si quito esto*/
+    position: fixed;
+    z-index: 99;
+}
+
+.header,
+.header>div {
+    height: 55px;
+    background-color: #85d65f;
+}
+
+.header a {
+    color: white;
+}
+
+.logo {
+    height: 100%;
+}
+
+.icon {
+    font-size: 2.5em;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 55px;
+}
+
+.fa-wrench-header {
+    font-size: 0.8em;
+}
+/* Sidenav */
+
+.my-side-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    padding-left: 3%;
+}
+
+.side-nav {
+    background-color: white !important;
+}
+
+.my-side-nav .collection-item {
+    color: black;
+    background-color: #85d65f !important;
+    padding-top: 10% !important;
+    padding-bottom: 5% !important;
+}
+
+.my-side-nav .icon-menu {
+    font-size: 2em;
+    color: white;
+}
+
+.my-side-nav .collection {
+    margin-top: 0;
+}
+
+.mdi-social-person-add {
+    margin-right: 13%;
+}
+
+.fa-wrench-div {
+    margin-left: 0;
+    padding-right: 3%;
+}
+/* ------------------------ Main -------------------------- */
+
+.busqueda .titulo-seccion,
+.productos .titulo-seccion {
+    font-size: 1.6em;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+/* ----- Búsqueda ------ */
+
+.header-main {
+    height: 35px;
+}
+
+.busqueda .input-field {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.busqueda .row,
+.productos .row {
+    margin-bottom: 0;
+}
+
+.select-filter {
+    padding-right: 0.75rem !important;
+}
+
+.main-ini {
+    padding-top: 35px;
+}
+
+.oculto-filtro {
+    display: none;
+}
+/*--------- Productos ----------*/
+
+.borrarFiltros{
+    margin-top: 80px;
+}
+
+.loadMore{
+    padding: 10px 10% 45px 10%;
+    background-color: #85d65f !important;
+}
+
+.loadMore:hover,.filterButton{
+    background-color: #64b240;
+}
+
+.loadMore>i,.loadMore{
+    font-size: 1.5em;
+}
+
+.card-image img {
+    height: 237px;
+}
+
+.card a, .link-gallerie>a, .ayuda-link>a{
+    color: #2e2ee6 !important;
+}
+
+.collapsible-body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.collapsible-body p {
+    padding: 0;
+}
+
+.comentarios .collection {
+    background-color: white;
+    border: none;
+}
+
+.comentarios .collection-item.avatar {
+    padding: 18px 0 18px 0;
+    height: auto;
+}
+
+.avatar .title {
+    font-weight: 600;
+}
+
+.secondary-content {
+    color: #85d65f;
+    margin-left: 7%;
+}
+
+.productos>.titulo-seccion {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.bloque-productos {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 280px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2rem;
+    padding-top: 18px;
+}
+
+.card a {
+    margin-right: 0;
+}
+
+.anadir {
+    background-color: #85d65f !important;
+}
+
+.p-anadir {
+    margin-top: -4px;
+    margin-bottom: 20px;
+    padding-left: 0 !important;
+}
+
+.p-info {
+    padding-left: 0 !important;
+    margin-bottom: 27px;
+}
+
+.card-image {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/* ----------------- Registro e inicio de sesión ----------------------- */
+/* Slider - Si los pongo juntos dejan de funcionar y
+vuelven a usar el color predeterminado del framework */
+/*
+input[type=range]::-webkit-slider-thumb{
+    background: #d0d0d0;
+}
+input[type=range]::-moz-range-thumb{
+    background: #d0d0d0;
+}
+input[type=range]::-ms-thumb{
+    background: #d0d0d0;
+}
+
+.thumb{
+    background-color: #efefef !important;
+}
+.value{
+    color: black !important;
+}*/
+
+.titulo-seccion,
+.nombre-producto {
+    font-size: 2em;
+}
+/* label color */
+/* materialize inputs */
+
+.input-field label,
+.input-field label.active {
+    color: #000 !important;
+}
+/* label focus color */
+
+.input-field input:focus + label {
+    color: #000 !important;
+}
+/* label underline focus color */
+
+.input-field input:not([type=range]):focus,
+.input-field>textarea.materialize-textarea:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+
+.input-field input:not([type=range]).valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+
+.input-field input:not([type=range]).invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #000;
+}
+
+.accion-hover {
+    background-color: #85d65f !important;
+    float: right !important;
+}
+
+.accion-hover:hover {
+    background-color: #64b240 !important;
+}
+
+.verifyEmail {
+    float: left !important;
+}
+/* --------------------- Footer --------------------- */
+
+.i-footer{
+    margin-left: 4%;
+}
+
+.page-footer {
+    background-color: #85d65f !important;
+    margin-top: 45px !important;
+}
+/* Código para mantener el Footer abajo */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 55px;
+    /*Esto no es del footer, es para separarlo del header */
+
+    flex: 1 0 auto;
+}
+/* -------------------- Carrito ----------------------- */
+
+.hoverable>tbody>tr:hover {
+    background-color: #E6E6E6 !important;
+}
+
+.pTotal {
+    font-size: 1.4em;
+}
+
+.container-pad0 {
+    margin-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container-pad0 .collection-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container-pad0 .collection,
+.busqueda .collection
+/*esto no es del carrito*/
+
+{
+    border: none;
+}
+
+.borrar {
+    font-size: 1.8em;
+    color: #ff5c5c;
+}
+
+.edit {
+    font-size: 1.8em;
+    color: black;
+}
+/* -------------------- Página individual de cada producto --------------------- */
+
+.info-basic-pro {
+    margin-top: 35px;
+}
+
+.precio-producto,
+.desc,
+.titulo-comentario,
+.stock,
+.votes,
+.explanation,
+.my-side-nav .collection-item {
+    font-size: 1.5em;
+}
+
+.btitulo-comentario {
+    margin-bottom: 10px;
+}
+
+.precio-producto>p {
+    width: 100%;
+}
+
+.precio-num {
+    font-size: 2em;
+}
+
+.desc {
+    margin-top: 10px;
+}
+
+.desc-producto {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-size: 1.07em;
+}
+
+.bloque-comentar .accion-hover {
+    margin-top: 5px;
+}
+
+.desc-producto,
+.comentario>div:last-child,
+td {
+    text-align: justify;
+}
+
+.small {
+    margin-left: 8px;
+}
+
+.comentarios .avatar p {
+    padding-top: 10px;
+}
+
+.mdi-action-thumb-up,
+.mdi-action-thumb-down,
+.fondo-filtro {
+    font-size: 3em;
+}
+
+.popout {
+    width: 110%;
+    margin-left: -5%;
+}
+/* --------- Slider --------- */
+
+.slider {
+    height: 350px;
+}
+
+.slider .slides {
+    height: 87%;
+}
+
+.slider ul.indicators li.indicator-item.active {
+    background-color: #85d65f;
+}
+
+.slides>li {
+    background-color: white;
+}
+/* ----------- Selecciom ----------- */
+
+::selection {
+    background: #B6E69F;
+}
+/*----------------- Botones ------------------*/
+
+.btn-agree {
+    background-color: #85d65f;
+    margin-right: 20px !important;
+}
+
+.btn-agree:hover {
+    background-color: #64B240;
+}
+
+.btn-desagree {
+    background-color: #FF5C5C;
+    margin-right: 20px !important;
+}
+
+.btn-desagree:hover {
+    background-color: #CC4A4A;
+}
+/* ------ Dropdown and checkbox ------ */
+
+.dropdown-content li>a,
+.dropdown-content li>span,
+label {
+    color: black;
+}
+
+[type="checkbox"]:checked+label:before {
+    border-right: 4px solid #85d65f;
+    border-bottom: 4px solid #85d65f;
+}
+
+.check-title {
+    margin-top: 9px;
+    display: inline-block;
+}
+
+.fondo-filtro {
+    text-align: center;
+    opacity: 0.15;
+    margin-top: 50px;
+    padding-right: 8%;
+    z-index: -1;
+    position: absolute;
+}
+
+.filters+button {
+    margin-right: 0.75rem;
+}
+/* ------- Compras ------- */
+
+div#dateEndinput{
+    margin-bottom: 20px;
+}
+
+.dia-pedido {
+    background-color: #BAE8A4 !important;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: #DEDEDE;
+}
+
+.purchase-table td,
+.purchase-table th {
+    padding-bottom: 22px;
+    padding-top: 22px;
+}
+
+table:nth-child(n+3) {
+    margin-top: 70px;
+}
+/*------- Date picker-------*/
+
+.picker__input.picker__input--active {
+    border-color: black;
+}
+
+.datepickerStart,
+.datepickerEnd {
+    margin-top: 2em !important;
+}
+
+.picker__date-display {
+    background-color: #85d65f;
+}
+
+.picker__weekday-display {
+    background-color: rgba(51, 51, 51, 0.08);
+}
+
+.picker__close,
+.picker__today,
+.picker__day.picker__day--today {
+    color: #4aaa1e;
+}
+
+.picker--focused .picker__day--selected,
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+    background-color: #4aaa1e;
+}
+
+.picker__nav--prev:hover,
+.picker__nav--next:hover {
+    background-color: rgba(209, 255, 189, 0.92);
+}
+/* ----------- Página no encontrada ---------- */
+
+.message {
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+/* el td es de la pagina de pedidos */
+
+.message>h2,
+.message>h5,
+th[colspan="3"] {
+    text-align: center;
+}
+/* ----------- Modal delete --------- */
+
+#modalDelete,
+#modalEdit,
+#modalVerify {
+    padding-bottom: 20px;
+}
+
+#modalDelete>.modal-content {
+    padding-bottom: 70px;
+}
+/*----------------- Mapa web -------------------*/
+
+.linkMap {
+    height: 140px;
+}
+
+.linkMap .btn-floating.btn-large {
+    height: 110px;
+    width: 110px;
+}
+
+.webMap {
+    margin-top: 80px;
+    margin-bottom: 190px;
+}
+
+.btn-large>i {
+    padding-top: 30px;
+    font-size: 300%;
+}
+
+.linkMap a:hover,.filterButton{
+    background-color: #85d65f !important;
+}
+/*-------------------- Configurador ----------------------*/
+
+.ramQuantity>.input-field{
+    margin-top: 0;
+}
+
+.componentes .dropdown-content{
+    max-height: 400px !important;
+    overflow-y: scroll;
+}
+
+.bloque-configurador {
+    padding-top: 35px;
+}
+
+.componentes>.row {
+    margin-bottom: 50px;
+    min-height: 143px;
+}
+
+.componentes img {
+    max-width: 55%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.configComponentInfo {
+    margin-top: 40px;
+}
+/* -------------------- Help ------------------------ */
+
+.component-name {
+    font-size: 2.5em;
+}
+
+.mdi-hardware-keyboard-arrow-down {
+    font-size: 3.5em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+

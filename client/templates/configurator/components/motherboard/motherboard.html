@@ -1,0 +1,41 @@
+<template name="motherboardFilterConfigurator">
+
+    <div class="row">
+        <div class="col s12 m2 l2">
+           {{#with getImageAndPage}}
+            <a href="{{link}}">
+                <img src="{{image}}" title="{{name}}" id='imgConf' alt="" class="responsive-img">
+            </a>
+            {{/with}}
+        </div>
+
+        <div class="col s12 m10 l6">
+
+            <select name="seccion" class="motherBoardFilter">
+                <option value="">Elegir placa base</option>
+
+                {{#each getMotherBoard}}
+                <option value='{{_id}}' {{getSelectedValue _id 'motherboard'}}> {{name}} </option>
+                {{/each}}
+
+            </select>
+
+            <div class="configComponentInfo">
+               {{#with getDataProduct}}
+                <div class="col l4 m4 s12">Precio: {{price}}</div>
+                <div class="col l4 m4 s12">Votos: {{votes}}</div>
+                <div class="col l4 m4 s12">Socket: {{details.socket}}</div>
+                <div class="col l4 m4 s12">Tipo de RAM: {{details.RAM}}</div>
+                <div class="col l4 m4 s12">Nº ranuras RAM: {{details.quantityRAM}}</div>
+                {{/with}}
+            </div>
+
+           <div class="section"></div>
+
+        </div>
+
+        {{iniSelect}}
+
+    </div>
+
+</template>

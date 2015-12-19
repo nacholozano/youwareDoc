@@ -1,0 +1,62 @@
+<template name="settings">
+
+<!-- Main -->
+<main class="main-ini">
+    <div class="container">
+        <div class="fadeIn">
+        <div class="row">
+
+            <div class="col s12">
+                <p class="titulo-seccion">{{i18n 'settings.title'}}</p>
+                <p class="titulo-seccion">{{i18n 'settings.help'}}</p>
+        </div>
+
+        <form class="modify col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="username" type="text" class="validate">
+                    <label for="username">{{i18n 'settings.user'}}</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">{{i18n 'settings.password'}}</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">{{i18n 'settings.email'}}</label>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="direccion" type="text" class="validate">
+                    <label for="direccion">Dirección</label>
+                </div>
+            </div>
+            -->
+            <div class="section">
+
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="verify-password" type="password" class="validate" required>
+                    <label for="verify-password">{{i18n 'settings.currentPass'}}</label>
+                </div>
+            </div>
+
+            <button class="accion-hover waves-effect waves-light btn">{{i18n 'settings.updateButton'}}<i class="mdi-content-send right"></i>
+            </button>
+
+        </form>
+    </div>
+    </div>
+
+</div>
+</main>
+
+</template>

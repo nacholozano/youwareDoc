@@ -1,0 +1,126 @@
+<template name="product">
+
+   <!-- Main -->
+    <main class="main-ini">
+        <div class="container">
+            <div class="fadeIn">
+            {{#with getInfoPro}}
+            <div class="row info-basic-pro">
+                <div class="col m5 l5 s12 imagen-producto">
+                    {{> slider}}
+                </div>
+                <div class="col s12 m6 l6 offset-m1 offset-l1 nombre-producto">{{name}}</div>
+                <div class="col m6 l6 s12 offset-m1 offset-l1 precio-producto valign-wrapper">
+                    <p> Precio: <span class="precio-num right"> {{price}} &euro;</span>
+                    </p>
+                </div>
+                <div class="col s12 m6 l6 offset-m1 offset-l1 link-gallerie">
+                    <a class="modal-trigger" href="#modalGallerie">Galería a más tamaño</a>
+                </div>
+                <div class="col s6 m3 l3 offset-m1 offset-l1">
+                    <p class="{{getColorStock}} stock">Stock: <span>{{stock}}</span></p>
+                </div>
+
+                {{#if getProductFromPurchase}}
+
+                <div class="offset-m1 offset-l1 col s7 m3 l3">
+
+                <div class="row">
+                    <div class="col s3 m3 l3 ">
+                        <i class="mdi-action-thumb-up upVote"></i>
+                    </div>
+                    <div class="col s3 m3 l3">
+                        <i class="mdi-action-thumb-down downVote"></i>
+                    </div>
+                </div>
+                </div>
+
+                {{/if}}
+
+                <div class="right col s5 m3 l3 productVote">
+                    <p class="votes right-align">Votos: <span class="{{getColorVotes}}">{{votes}}</span></p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12 m12 l12 desc">Descripción:</div>
+                <div class="col m12 s12 l12 desc-producto">{{{ desc }}}</div>
+
+                {{#if currentUser}}
+                <form class="addtoBasket">
+                    <div class="col m6 l6 s12">
+                        <div class="input-field">
+                            <input id="unidades" type="number" min="1" max="{{stock}}" required>
+                            <label for="unidades">Unidades</label>
+                        </div>
+                    </div>
+                    <div class="col m6 l6 s12">
+                        <button class="accion-hover waves-effect waves-light btn">Añadir al carrito<i class="mdi-content-send right"></i>
+                        </button>
+                    </div>
+                </form>
+                {{/if}}
+            </div>
+
+            <div class="section space"></div>
+
+            <ul class="collapsible popout" data-collapsible="accordion">
+
+            <li>
+
+            <div class="collapsible-header"><i class="mdi-communication-chat"></i>Comentarios</div>
+            <div class="collapsible-body">
+
+            {{#if getProductFromPurchase}}
+
+            <div class="row bloque-comentar">
+                <form class="submit-comment col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="comentario" class="materialize-textarea" required></textarea>
+                            <label for="comentario">Comentar</label>
+                        </div>
+                    </div>
+                    <button class="accion-hover waves-effect waves-light btn">Comentar<i class="mdi-content-send right"></i>
+                    </button>
+                </form>
+            </div>
+
+            {{/if}}
+
+            <div class="comentarios">
+                 <ul class="collection">
+
+                    {{#each getComments}}
+                    <li class="collection-item avatar">
+                      <span class="title">{{username}} en {{createAt}}</span>
+                      <p>{{comment}}
+                      </p>
+                      <!--<a href="#!" class="secondary-content">
+                         <span class="num-pos">{{positive}}</span>
+                         <i class="small mdi-action-thumb-up"></i>
+                      </a>-->
+                    </li>
+                    {{/each}}
+
+                  </ul>
+            </div>
+
+            </div>
+            </li>
+            </ul>
+
+            {{/with}}
+            </div>
+
+        </div>
+    </main>
+
+    <div id="modalGallerie" class="modal">
+        <div class="modal-content">
+            {{> slider}}
+        </div>
+    </div>
+
+</template>

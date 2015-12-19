@@ -1,0 +1,78 @@
+<template name="basket">
+
+    <main>
+        <div class="fadeIn">
+            {{#if currentUser}}
+            <div class="container-pad0">
+
+                <!-- Se descuadra en el movil -->
+                {{#if getHayCarrito}}
+                <div class="col s12">
+                    <p class="titulo-seccion">Carrito</p>
+                </div>
+
+                <table class="hoverable centered responsive-table">
+                    <thead>
+                        <tr>
+                            <th data-field="id">Nombre</th>
+                            <th data-field="name">Cantidad</th>
+                            <th data-field="priceUnit">Precio unidad</th>
+                            <th data-field="price">Subtotal</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {{#each getBasket}}
+                        <tr data-remove="{{proId}}">
+                            <td>{{getName proId}}</td>
+                            <td>{{quantity}}</td>
+                            <td>{{getPrice proId }}</td>
+                            <td>{{subtotal}}</td>
+
+                            <td><a title="Editar unidades" data-edit="{{proId}}" href="#modalEdit" class="modal-trigger edit secondary-content"><i data-edit="{{proId}}" class="mdi-editor-mode-edit"></i></a>
+                            </td>
+
+                            <td><a title="Borrar producto" data-remove="{{proId}}" href="#modalDelete" class="modal-trigger borrar secondary-content"><i data-remove="{{proId}}" class="mdi-action-highlight-remove"></i></a>
+                            </td>
+
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+
+                <div class="divider"></div>
+                <div class="section"></div>
+                <div class="section"></div>
+
+                <div class="pTotal">Total: <span class="total">
+            {{getTotal}} &euro;
+        </span>
+                </div>
+
+                <button class="purchase accion-hover waves-effect waves-light btn">Comprar<i class="mdi-content-send right"></i>
+                </button>
+
+                <input id="input-code-product" type="hidden">
+                {{> modalDeleteTemp}}
+                {{> modalEditTemp}}
+
+                    {{#unless getVerifyAccount}}
+                        {{> modalVerifyAccount}}
+                    {{/unless}}
+
+                {{else}}
+
+                {{> emptyBasket}}
+
+                {{/if}}
+
+            </div>
+
+        {{/if}}
+
+        </div>
+    </main>
+
+</template>

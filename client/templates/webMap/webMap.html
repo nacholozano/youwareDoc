@@ -1,0 +1,59 @@
+<template name="webMap">
+
+    <main class="main-ini">
+        <div class="container">
+            <div class="fadeIn">
+                <div class="row webMap">
+
+                    {{#if currentUser}}
+
+                    <div class="linkMap col m6 l6 s6 center-align">
+                        <a title="Carrito" class="btn-floating btn-large waves-effect waves-light green" href='basket'><i class="mdi-action-shopping-cart"></i></a>
+                    </div>
+
+                    <div class="linkMap col m6 l6 s6 center-align">
+                        <a title="Historial de compras" class="btn-floating btn-large waves-effect waves-light green" href='purchase'><i class="mdi-maps-local-shipping"></i></a>
+                    </div>
+
+                    <div class="linkMap col m6 l6 s6 center-align">
+                        <a title="Ajustes de cuenta" class="btn-floating btn-large waves-effect waves-light green" href='settings'><i class="mdi-action-settings"></i></a>
+                    </div>
+
+                    <div class="linkMap col m6 l6 s6 center-align">
+                        <a title="Ver productos" class="btn-floating btn-large waves-effect waves-light green" href='/'><i class="mdi-editor-format-list-bulleted"></i></a>
+                    </div>
+
+                    <div class="linkMap col m12 l12 s12 center-align">
+                        <div class="col m12 l12 s12 center-align">
+                            <a title="Configurador de productos" class="btn-floating btn-large waves-effect waves-light green" href='configurator'><i class="white-text fa fa-wrench"></i></a>
+                        </div>
+                        <div class="col m12 l12 s12">
+                            <i class="mdi-hardware-keyboard-arrow-down"></i>
+                        </div>
+                        <div class="col m12 l12 s12 center-align">
+                            <a title="Ayuda" class="btn-floating btn-large waves-effect waves-light green" href='help'><i class="white-text mdi-action-help"></i></a>
+                        </div>
+s                    </div>
+
+                    {{else}}
+
+                    <div class="linkMap col m4 l4 s12 center-align">
+                        <a title="Iniciar sesión" class="btn-floating btn-large waves-effect waves-light green" href='login'><i class="mdi-action-account-circle"></i></a>
+                    </div>
+
+                    <div class="linkMap col m4  s12 center-align">
+                        <a title="Crear cuenta" class="btn-floating btn-large waves-effect waves-light green" href='signUp'><i class="icon-menu mdi-social-person-add"></i> </a>
+                    </div>
+
+                    <div class="linkMap col m4 l4 s12 center-align">
+                        <a title="Ver productos" class="btn-floating btn-large waves-effect waves-light green" href='/'><i class="mdi-editor-format-list-bulleted"></i></a>
+                    </div>
+
+                    {{/if}}
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</template>

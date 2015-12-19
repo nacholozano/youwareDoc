@@ -1,0 +1,31 @@
+<template name="sideNav">
+
+<div class="valign-wrapper hide-on-med-and-up my-side-nav">
+
+    <ul id="slide-out" class="side-nav fixed collection">
+
+        <div class="collection">
+            {{#if currentUser}}
+            <a href="{{pathFor 'basket'}}" class="collection-item waves-effect waves-light">Carrito <div class="secondary-content"><i class="icon-menu mdi-action-shopping-cart"></i> </div></a>
+
+            <a href="{{pathFor 'settings'}}" class="collection-item waves-effect waves-light">Ajustes <div class="secondary-content"><i class="icon-menu mdi-action-settings"></i> </div></a>
+
+       <a href="{{pathFor 'purchase'}}" class="collection-item waves-effect waves-light">Compras<div class="secondary-content"><i class="icon-menu mdi-maps-local-shipping"></i> </div></a>
+
+           <a href="configurator" class="collection-item waves-effect waves-light">Configurador<div class="secondary-content white-text fa-wrench-div"><i class="fa fa-wrench fa-lg"></i></div></a>
+
+            <a href="#!" class="a-logout collection-item waves-effect waves-light">Logout<div class="secondary-content"><i class="icon-menu mdi-content-forward"></i> </div></a>
+            {{else}}
+            <a href="{{pathFor 'login'}}" class="collection-item waves-effect waves-light">Iniciar sesión <div class="secondary-content"><i class="icon-menu mdi-action-account-circle"></i> </div></a>
+
+            <a href="{{pathFor 'signUp'}}" class="collection-item waves-effect waves-light">Registrarse <div class="secondary-content"><i class="icon-menu mdi-social-person-add"></i> </div></a>
+            {{/if}}
+
+        </div>
+    </ul>
+
+    <a href="#!" class="icon button-collapse" data-activates="slide-out"><i class="mdi-action-view-headline"></i></a>
+
+</div>
+
+</template>

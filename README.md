@@ -1,4 +1,4 @@
-# youwareDoc
+# youwareDoc (pending translate)
 
 <b>Final school year project</b>
 
@@ -79,3 +79,64 @@ Password: nacho
 - [x] **Pantalla de carga**
 - [x] **Control de dirección no encontrada**
 
+
+# Instalación
+
+Instalación en linux
+
+1. Instalar Meteor JS ejecutando este comando desde la consola:
+curl https://install.meteor.com/ | sh
+
+2. Copiar todos los archivos, incluyendo archivos ocultos, en una carpeta cualquiera.  
+
+3. Acceder por medio de la consola a la carpeta donde están los archivos y ejecutar el siguiente comando:  
+meteor 
+
+Para ver el contenido de una carpeta desde la consola usa este comando: 
+ls 
+
+Para moverte por la consola usa este comando (sin símbolos):  
+cd <nombre del directorio> 
+
+Instalación en Windows 
+
+1. Descargar e instalar el siguiente instalador:
+https://install.meteor.com/windows
+
+2. Copiar todos los archivos, incluyendo archivos ocultos, en una carpeta cualquiera.
+
+3. Acceder por medio de la consola a la carpeta donde están los archivos y ejecutar el siguiente comando:  
+meteor 
+
+Para ver el contenido de una carpeta desde la consola usa este comando: 
+dir 
+
+Para moverte por la consola usa este comando (sin símbolos):  
+cd <nombre del directorio> 
+
+Podrás acceder a la aplicación por medio de cualquier navegador en la siguiente dirección:
+http://localhost:3000/
+
+Posibles problemas
+
+Es posible que algunos paquetes de la aplicación no funcionen.
+
+Paquetes que me han fallado: 
+
+1. Paquete para el mapeo de las rutas:
+Para reinstalarlo ejecuta los siguiente comandos desde la carpeta del proyecto: 
+meteor remove iron:router 
+meteor add iron:router
+
+2. Paquete para animaciones: 
+Para reinstalarlo ejecuta los siguiente comandos desde la carpeta del proyecto: 
+meteor remove velocityjs:velocityjs 
+meteor add velocityjs:velocityjs
+
+Otros
+
+Parar la ejecución de la aplicación: ctrl + C sobre la consola 
+Resetear la base de datos (antes de resetear es necesario parar la aplicación): meteor reset 
+
+Hay unos datos de prueba que se escriben en la base de datos al arrancar el servidor. 
+Puedes consultar estos datos en /server/startup.js  

@@ -1,0 +1,99 @@
+/*----------------------------------------------------- Efecto boton añadir*/
+
+.anadir {
+    width: 37px;
+    height: 37px;
+
+    -moz-transition: height 0.14s,width 0.14s,padding-top 0.14s !important;
+    -webkit-transition: height 0.14s,width 0.14s,padding-top 0.14s !important;
+    -o-transition: height 0.14s,width 0.14s,padding-top 0.14s !important;
+    -ms-transition: height 0.14s,width 0.14s,padding-top 0.14s !important;
+    transition: height 0.14s ,width 0.14s,padding-top 0.14s !important;
+}
+
+.anadir:hover {
+    width: 47px;
+    height: 47px;
+    padding-top: 6px;
+}
+
+.anadir>i {
+    transition: font-size 0.14s,-webkit-transform 0.14s,-moz-transform 0.14s,-o-transform 0.14s,-ms-transform 0.14s, transform 0.14s;
+}
+
+.anadir:hover>i {
+    font-size: 2.3rem;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* ------------------------------------------------- Cambiar color de la foto al pasar el cursor */
+
+.card-image img{
+    -moz-filter: grayscale(95%);
+    -webkit-filter: grayscale(95%);
+    -o-filter: grayscale(95%);
+    -ms-filter: grayscale(95%);
+    filter: grayscale(95%);
+
+    transition: -moz-filter 0.25s, -o-filter 0.25s, -webkit-filter 0.25s, -ms-filter 0.25s, filter 0.25s;
+}
+
+.card-image img:hover{
+    -moz-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+/*--------------------------------------------------------- Cambiar color de botones para votar*/
+
+.mdi-action-thumb-up,.mdi-action-thumb-down{
+    -moz-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    transition: color 0.2s;
+
+    cursor: pointer;
+}
+
+.mdi-action-thumb-up:hover {
+    color: #85d65f;
+}
+
+.mdi-action-thumb-down:hover {
+    color: #F44336;
+}
+
+/*---------------------------------------------------------- Agrandar X para cerrar los modales*/
+
+
+.cerrar-modal>a{
+  color: grey;
+}
+
+.cerrar-modal>a{
+    -moz-transition: color 0.2s,font-size 0.2s;
+    -webkit-transition: color 0.2s,font-size 0.2s;
+    -o-transition: color 0.2s,font-size 0.2s;
+    -ms-transition: color 0.2s,font-size 0.2s;
+    transition: color 0.2s,font-size 0.2s;
+
+}
+
+.cerrar-modal:hover>a {
+    color: black;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
